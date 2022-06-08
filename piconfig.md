@@ -55,9 +55,7 @@ $ pip install -r requirements.txt
 
 - The following packages need to be installed for Tango server:
 ```
-$ pip install numpy
-$ pip install six
-$ pip install Sphinx
+$ pip install numpy six Sphinx
 $ sudo apt install mariadb-server
 ```
 If step 2 was fully completed, one needs only:  
@@ -67,16 +65,11 @@ $ sudo apt install mariadb-server
 ```
 - Install [Pi Tango server](https://tango-controls.readthedocs.io/en/latest/installation/tango-on-raspberry-pi.html):
 ``` 
-$ sudo apt install tango-db  
-$ sudo apt install tango-starter  
-$ sudo apt install tango-test  
-$ sudo apt install liblog4j1.2-java  
+$ sudo apt install tango-db tango-starter tango-test liblog4j1.2-java  
 ```
 - Install PyTango. The official [instructions](https://gitlab.com/tango-controls/pytango) does not work correctly. Use:
 ```
-$ sudo apt install libboost-python-dev  
-$ sudo apt install libtango-dev  
-$ sudo apt install python3-tango  
+$ sudo apt install libboost-python-dev libtango-dev python3-tango  
 ```
 
 
