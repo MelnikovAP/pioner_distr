@@ -28,12 +28,17 @@ $ sudo date -s 'YYYY-DD-MM HH:MM:SS'
 $ sudo apt update  
 $ sudo apt upgrade
 ```
-7. To use onscreen keyboard install onboard: 
+8. To use onscreen keyboard install onboard: 
 ```
 $ sudo apt install onboard
 ```
 and activate it with GUI. Also you can add the shortcut to the top pi panel
-9. The following packages need to be installed for Tango server:
+9. Download scripts from repository:
+```
+$ git clone https://github.com/MelnikovAP/nanocal_pi.git
+```
+10. Make new virtual environment for python and install everytin from [here](https://github.com/MelnikovAP/nanocal_pi)  
+12. The following packages need to be installed for Tango server:
 ```
 $ sudo pip install numpy
 $ sudo pip install six
@@ -59,10 +64,7 @@ $ sudo apt install python3-tango
 $ git config --global user.name "MelnikovAP"
 $ git config --global user.email "melnikov.al.pe@gmail.com"
 ```
-14. Download scripts from repository:
-```
-$ git clone https://github.com/MelnikovAP/nanocal.git
-```
+
 15. If mistake with acces to USB:
 https://askubuntu.com/questions/978552/how-do-i-make-libusb-work-as-non-root
 $ sudo nano /etc/udev/rules.d/90-usbpermission.rules
