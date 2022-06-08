@@ -37,32 +37,35 @@ and activate it with GUI. Also you can add the shortcut to the top pi panel
 ```
 $ git clone https://github.com/MelnikovAP/nanocal_pi.git
 ```
-10. Make new virtual environment for python and install everyting from [here](https://github.com/MelnikovAP/nanocal_pi)  
-12. The following packages need to be installed for Tango server:
+10. Make new virtual environment for python and install DAQBoard libs, follow the [instructions](https://github.com/MelnikovAP/nanocal_pi)  
+11. Go to the cloned directory and install dependencies:
+```
+$ pip install -r requirements.txt
+```
+14. The following packages need to be installed for Tango server:
 ```
 $ sudo pip install numpy
 $ sudo pip install six
 $ sudo pip install Sphinx
 $ sudo apt install mariadb-server
 ```
-10. Install [Pi Tango server](https://tango-controls.readthedocs.io/en/latest/installation/tango-on-raspberry-pi.html):
+12. Install [Pi Tango server](https://tango-controls.readthedocs.io/en/latest/installation/tango-on-raspberry-pi.html):
 ``` 
 $ sudo apt install tango-db  
 $ sudo apt install tango-starter  
 $ sudo apt install tango-test  
 $ sudo apt install liblog4j1.2-java  
 ```
-11. Install PyTango. The official [instructions](https://gitlab.com/tango-controls/pytango) does not work correctly. Use:
+13. Install PyTango. The official [instructions](https://gitlab.com/tango-controls/pytango) does not work correctly. Use:
 ```
 $ sudo apt install libboost-python-dev  
 $ sudo apt install libtango-dev  
 $ sudo apt install python3-tango  
 ```
-12. install DAQBoard libs, follow the [instructions](https://github.com/MelnikovAP/nanocal/blob/master/README.md)
-13. configure git:
+14. Optional: configure git:
 ```
-$ git config --global user.name "MelnikovAP"
-$ git config --global user.email "melnikov.al.pe@gmail.com"
+$ git config --global user.name "username"
+$ git config --global user.email "email"
 ```
 
 15. If mistake with acces to USB:
