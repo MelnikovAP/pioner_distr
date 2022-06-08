@@ -63,7 +63,7 @@ $ sudo apt install mariadb-server
 If step 2 was fully completed, one needs only:  
 ```
 $ pip install Sphinx
-$ apt install mariadb-server
+$ sudo apt install mariadb-server
 ```
 - Install [Pi Tango server](https://tango-controls.readthedocs.io/en/latest/installation/tango-on-raspberry-pi.html):
 ``` 
