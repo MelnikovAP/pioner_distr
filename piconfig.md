@@ -44,10 +44,15 @@ $ pip install -r requirements.txt
 ```
 14. The following packages need to be installed for Tango server:
 ```
-$ sudo pip install numpy
-$ sudo pip install six
-$ sudo pip install Sphinx
-$ sudo apt install mariadb-server
+$ pip install numpy
+$ pip install six
+$ pip install Sphinx
+$ apt install mariadb-server
+```
+If step 11 was completed, one needs only:  
+```
+$ pip install Sphinx
+$ apt install mariadb-server
 ```
 12. Install [Pi Tango server](https://tango-controls.readthedocs.io/en/latest/installation/tango-on-raspberry-pi.html):
 ``` 
