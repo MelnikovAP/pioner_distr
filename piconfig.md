@@ -32,12 +32,12 @@ $ sudo apt upgrade
 ```
 $ sudo apt install onboard
 ```
-and activate it with GUI. Also you can add the shortcut to the top pi panel
+and activate it with GUI. Also you can add the shortcut to the top pi panel  
 9. Download scripts from repository:
 ```
 $ git clone https://github.com/MelnikovAP/nanocal_pi.git
 ```
-10. Make new virtual environment for python and install everytin from [here](https://github.com/MelnikovAP/nanocal_pi)  
+10. Make new virtual environment for python and install everyting from [here](https://github.com/MelnikovAP/nanocal_pi)  
 12. The following packages need to be installed for Tango server:
 ```
 $ sudo pip install numpy
