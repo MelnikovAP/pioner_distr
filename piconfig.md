@@ -37,7 +37,7 @@ and activate it with GUI. Also you can add the shortcut to the top pi panel
 ```
 $ git clone https://github.com/MelnikovAP/nanocal_pi.git
 ```
-10. Make new virtual environment for python and install DAQBoard libs, follow the [instructions](https://github.com/MelnikovAP/nanocal_pi)  
+10. Make new virtual environment for python and install DAQBoard libs, follow the [instructions](https://github.com/MelnikovAP/nanocal_pi/blob/master/README.md)  
 11. Go to the cloned directory and install dependencies:
 ```
 $ pip install -r requirements.txt
