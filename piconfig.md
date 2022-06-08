@@ -26,7 +26,7 @@ static domain_name_servers=160.103.209.9 160.103.208.9
 ```
 - Maybe one needs to change time and date:  
 ```
-$ sudo date -s 'YYYY-DD-MM HH:MM:SS'
+$ sudo date -s 'YYYY-MM-DD HH:MM:SS'
 ```
 - Update all the packages:
 ```
