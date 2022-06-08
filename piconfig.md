@@ -58,7 +58,7 @@ $ pip install -r requirements.txt
 $ pip install numpy
 $ pip install six
 $ pip install Sphinx
-$ apt install mariadb-server
+$ sudo apt install mariadb-server
 ```
 If step 2 was fully completed, one needs only:  
 ```
