@@ -26,7 +26,7 @@ static domain_name_servers=160.103.209.9 160.103.208.9
 ```
 7. Update all the packages:
 ```
-$ sudo apt-update  
+$ sudo apt update  
 $ sudo apt upgrade
 ```
 8. The following packages need to be installed for Tango server:
