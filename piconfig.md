@@ -8,7 +8,7 @@ dtparam=i2c_vc_baudrate=50000
 $ sudo apt install onboard
 ```
 and activate it with GUI. Also you can add the shortcut to the top pi panel  
-4. Switch on raspberry pi, enter locale, password, etc.
+4. Switch on raspberry pi, enter locale, password, etc.  
 5. Activate SSH via raspi-config:
 ```
 $ sudo raspi-config
