@@ -73,6 +73,19 @@ $ sudo apt install libboost-python-dev libtango-dev python3-tango
 ```
 
 
+sudo service mariadb start
+wget https://gitlab.com/api/v4/projects/24125890/packages/generic/TangoSourceDistribution/9.3.5/tango-9.3.5.tar.gz
+mkdir tango
+cd tango
+tar xzvf ../tango-9.3.5.tar.gz
+
+
+sudo mariadb -u root
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'mypassword';
+exit
+
+./tango-9.3.5/configure --enable-java=yes --enable-mariadb=yes --enable-dbserver=yes --enable-dbcreate=yes --with-mysql-admin=root --with-mysql-admin-passwd='tonic13' --prefix=/usr/local/tango
+
 
 ## Optional
 
