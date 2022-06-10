@@ -56,35 +56,26 @@ $ pip install -r requirements.txt
 - The following packages need to be installed for Tango server:
 ```
 $ pip install numpy six Sphinx
-$ sudo apt install mariadb-server
+$ sudo apt install g++ mariadb-server libmariadb-dev zlib1g-dev libomniorb4-dev libcos4-dev omniidl libzmq3-dev make
 ```
 If step 2 was fully completed, one needs only:  
 ```
 $ pip install Sphinx
 $ sudo apt install mariadb-server
+$ sudo service mariadb start
 ```
 - Install [Pi Tango server](https://tango-controls.readthedocs.io/en/latest/installation/tango-on-raspberry-pi.html):
+``` 
+$ sudo apt install tango-db
+```
+enter host and port (raspberrypi:10000); configure db -> Yes; password - empty
 ``` 
 $ sudo apt install tango-db tango-starter tango-test liblog4j1.2-java  
 ```
 - Install PyTango. The official [instructions](https://gitlab.com/tango-controls/pytango) does not work correctly. Use:
 ```
-$ sudo apt install libboost-python-dev libtango-dev python3-tango  
+$ sudo apt install libboost-python-dev libtango-dev python3-tango
 ```
-
-
-sudo service mariadb start
-wget https://gitlab.com/api/v4/projects/24125890/packages/generic/TangoSourceDistribution/9.3.5/tango-9.3.5.tar.gz
-mkdir tango
-cd tango
-tar xzvf ../tango-9.3.5.tar.gz
-
-
-sudo mariadb -u root
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'mypassword';
-exit
-
-./tango-9.3.5/configure --enable-java=yes --enable-mariadb=yes --enable-dbserver=yes --enable-dbcreate=yes --with-mysql-admin=root --with-mysql-admin-passwd='tonic13' --prefix=/usr/local/tango
 
 
 ## Optional
