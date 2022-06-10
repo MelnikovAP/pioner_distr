@@ -61,7 +61,7 @@ $ sudo apt install g++ mariadb-server libmariadb-dev zlib1g-dev libomniorb4-dev 
 If step 2 was fully completed, one needs only:  
 ```
 $ pip install Sphinx
-$ sudo apt install mariadb-server
+$ sudo apt install mariadb-server libmariadb-dev zlib1g-dev libomniorb4-dev libcos4-dev omniidl libzmq3-dev
 $ sudo service mariadb start
 ```
 - Install [Pi Tango server](https://tango-controls.readthedocs.io/en/latest/installation/tango-on-raspberry-pi.html):
