@@ -76,7 +76,34 @@ $ sudo apt install tango-db tango-starter tango-test liblog4j1.2-java
 ```
 $ sudo apt install libboost-python-dev libtango-dev python3-tango
 ```
+- Install supervisor for Tango server auto-start:  
+```
+apt install supervisor
+supervisord --version
+```
+- Configure Supervisor. Edit /etc/supervisor/supervisord.conf. Add the following:  
+```
+[inet_http_server]
+port = 160.103.33.50:9001
+username = pi
+password = tonic13
 
+[program:nanocontrol_tango]
+directory = /home/pi/nanocal_pi
+command = python nanocontrol_tango.py NanoControl
+stdout_logfile = /home/pi/nanocal_pi/logs/supervisor_nanocontrol_tango.log
+stderr_logfile= /home/pi/nanocal_pi/logs/supervisor_nanocontrol_tango.err
+autostart = true
+startsecs = 5
+autorestart = true
+user = pi
+```
+```
+sudo systemctl enable supervisor --now
+sudo systemctl status supervisor
+sudo systemctl restart supervisor
+sudo supervisorctl reload
+```
 
 ## Optional
 
