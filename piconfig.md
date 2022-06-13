@@ -123,7 +123,9 @@ add there: SUBSYSTEM==“usb”,GROUP=“users”,MODE=“0666”
 - Install Tango from [here](https://github.com/tango-controls/cppTango/releases/tag/9.3.4)  
 - Set enviroment variable TANGO_HOST='raspberrypi:10000'  
 - Add to path C:\Program Files\tango\bin  
-
+```
+pip install numpy six Sphinx pytango 
+```
 
 
 
