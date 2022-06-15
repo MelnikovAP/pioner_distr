@@ -97,6 +97,16 @@ autostart = true
 startsecs = 5
 autorestart = true
 user = pi
+
+[program:nanocontrol_http]
+directory = /home/pi/nanocal_pi
+command = python -m http.server
+stdout_logfile = /home/pi/nanocal_pi/logs/supervisor_nanocontrol_http.log
+stderr_logfile= /home/pi/nanocal_pi/logs/supervisor_nanocontrol_http.err
+autostart = true
+startsecs = 5
+autorestart = true
+user = pi
 ```
 ```
 sudo systemctl enable supervisor --now
