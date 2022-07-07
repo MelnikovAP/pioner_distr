@@ -143,3 +143,8 @@ pip install numpy six Sphinx pytango
 https://anaconda.org/tango-controls/repo
 
 think about auto installation on raspberry using script
+
+
+
+Installing Java 8 on Debian (to launch jive):
+https://linuxize.com/post/install-java-on-debian-10/
