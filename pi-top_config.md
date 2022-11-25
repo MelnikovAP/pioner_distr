@@ -142,6 +142,7 @@ sudo systemctl enable supervisor --now
 sudo systemctl status supervisor
 sudo systemctl restart supervisor
 sudo supervisorctl reload
+sudo supervisorctl status
 ```
 
 ## Optional
