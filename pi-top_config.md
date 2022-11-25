@@ -75,6 +75,18 @@ $ sudo apt install tango-starter tango-test liblog4j1.2-java
 ```
 $ sudo apt install libboost-python-dev libtango-dev python3-tango
 ```
+- Graphic tools (Jive, Astor,…) installation. Download the latest version of libtango-java librairies on [picaa](https://people.debian.org/~picca/) and install it:
+```
+wget -c https://people.debian.org/~picca/libtango-java_XX_version.deb\
+sudo dpkg -i ./libtango-java_XX_version.deb
+```
+if there is a problem with the last command, use 
+```
+sudo apt install tango-starter tango-test liblog4j1.2-java
+sudo apt --fix-broken install
+sudo dpkg -i ./libtango-java_XX_version.deb
+```
+
 - Install supervisor for Tango server auto-start:  
 ```
 sudo apt install supervisor
