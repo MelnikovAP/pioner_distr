@@ -85,7 +85,16 @@ if there is a problem with the last command, use
 sudo apt install tango-starter tango-test liblog4j1.2-java
 sudo apt --fix-broken install
 sudo dpkg -i ./libtango-java_XX_version.deb
+```  
+Install java 8 and set is as default java (Tango graphic tools are working only with java 8!!):
 ```
+sudo apt-get install openjdk-8-jdk
+sudo update-alternatives --config java
+java -version
+```
+
+
+
 
 - Install supervisor for Tango server auto-start:  
 ```
