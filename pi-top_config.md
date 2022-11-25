@@ -40,11 +40,11 @@ sudo nano /etc/hosts
 
 ## 2. Installing nanocal libraries
 
+- Make new virtual environment for python and install DAQBoard libs, follow the [instructions](https://github.com/MelnikovAP/nanocal_pi/blob/main/README.md) 
 - Download scripts from repository:
 ```
 $ git clone https://github.com/MelnikovAP/nanocal_pi.git
 ```
-- Make new virtual environment for python and install DAQBoard libs, follow the [instructions](https://github.com/MelnikovAP/nanocal_pi/blob/main/README.md) 
 - Go to the cloned directory and install dependencies:
 ```
 $ pip install -r requirements.txt
@@ -69,7 +69,7 @@ $ sudo apt install tango-db
 ```
 enter host and port (raspberrypi:10000); configure db -> Yes; password - empty
 ``` 
-$ sudo apt install tango-db tango-starter tango-test liblog4j1.2-java  
+$ sudo apt install tango-starter tango-test liblog4j1.2-java  
 ```
 - Install PyTango. The official [instructions](https://gitlab.com/tango-controls/pytango) does not work correctly. Use:
 ```
@@ -77,7 +77,7 @@ $ sudo apt install libboost-python-dev libtango-dev python3-tango
 ```
 - Install supervisor for Tango server auto-start:  
 ```
-apt install supervisor
+sudo apt install supervisor
 supervisord --version
 ```
 - Configure Supervisor. Edit /etc/supervisor/supervisord.conf. Add the following:  
