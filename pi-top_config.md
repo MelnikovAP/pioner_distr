@@ -92,7 +92,16 @@ sudo apt-get install openjdk-8-jdk
 sudo update-alternatives --config java
 java -version
 ```
-
+Install NanoControl server to Tango:
+```
+jive&
+```
+In Jive Tools -> Server wizard -> Server name: NanoControl; Instance name: NanoControl  
+In console run server from /nanical_pi:
+```
+python nanocontrol_tango.py NanoControl
+```
+in Jive Server wizard continue: Declare -> NanoControl/NanoControl/1 
 
 
 
