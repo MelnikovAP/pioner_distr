@@ -3,7 +3,7 @@
 
 ## 1. Install and configure raspi os
 
-- Download pi-top [image]([https://downloads.raspberrypi.org/raspios_arm64/images/](https://www.pi-top.com/resources/download-os) or rapberry pi [image](https://downloads.raspberrypi.org/raspios_arm64/images/) for arm64 and write image to SD card with [Raspberry Pi Imager](https://www.raspberrypi.com/software/) or [etcher](https://www.balena.io/etcher/)
+- Download pi-top [image](https://www.pi-top.com/resources/download-os) or rapberry pi [image](https://downloads.raspberrypi.org/raspios_arm64/images/) for arm64 and write image to SD card with [Raspberry Pi Imager](https://www.raspberrypi.com/software/) or [etcher](https://www.balena.io/etcher/)
 ### a) In case of using pi-top:
 - Switch on pi-top  
 - Activate SSH with pi-top screen and buttons
