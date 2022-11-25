@@ -1,13 +1,33 @@
-# Pi-top configuration steps for using nanocal 2.0
+# Pi configuration steps for using nanocal 2.0
 
 
 ## 1. Install and configure raspi os
 
-- Download pi-top [image]([https://downloads.raspberrypi.org/raspios_arm64/images/](https://www.pi-top.com/resources/download-os) 
+- Download pi-top [image]([https://downloads.raspberrypi.org/raspios_arm64/images/](https://www.pi-top.com/resources/download-os) or rapberry pi [image](https://downloads.raspberrypi.org/raspios_arm64/images/) for arm64 and write image to SD card with [Raspberry Pi Imager](https://www.raspberrypi.com/software/) or [etcher](https://www.balena.io/etcher/)
+### a) In case of using pi-top:
 - Switch on pi-top  
 - Activate SSH with pi-top screen and buttons
-- Find ip address on pi=top display
+- Find ip address on pi-top display
 - Now you can connect via ssh: ssh -X pi@{ip_address}. default password is "pi-top"
+### b) In case of using standard pi:
+- To 7" multitouch display add to /config.txt: 
+```
+dtparam=i2c_vc_baudrate=50000
+```  
+- Switch on raspberry pi, enter locale, password, etc.  
+- Activate SSH via raspi-config:
+```
+$ sudo raspi-config
+```
+- To use onscreen keyboard install onboard: 
+```
+$ sudo apt install onboard
+```
+and activate it with GUI. Also you can add the shortcut to the top pi panel  
+### After, in both cases:
+```
+ssh -X pi@{ipaddrress}
+```
 - Set the static ip address via: 
 ```
 $ sudo nano /etc/dhcpcd.conf
