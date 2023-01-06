@@ -203,3 +203,4 @@ https://linuxize.com/post/install-java-on-debian-10/
 There could be a problem with X11 forwarding on VScode.    
 To fix id generate ssh key with: ssh-keygen -p -m PEM  
 and install vscode extension on pi  
+and add to ~/.bashrc & ~/.profile the following: export DISPLAY="localhost:10.0$DISPLAY"
