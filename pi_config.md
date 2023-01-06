@@ -198,3 +198,8 @@ think about auto installation on raspberry using script
 
 Installing Java 8 on Debian (to launch jive):
 https://linuxize.com/post/install-java-on-debian-10/
+
+
+There could be a problem with X11 forwarding on VScode.    
+To fix id generate ssh key with: ssh-keygen -p -m PEM  
+and install vscode extension on pi  
