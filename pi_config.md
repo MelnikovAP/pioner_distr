@@ -87,7 +87,7 @@ $ sudo service mariadb start
 ``` 
 $ sudo apt install tango-db
 ```
-enter host and port (raspberrypi:10000); configure db -> Yes; password - empty
+enter host and port (raspberrypi:10000); configure db -> Yes; password - empty  
 ``` 
 $ sudo apt install tango-starter tango-test liblog4j1.2-java  
 ```
@@ -131,6 +131,8 @@ sudo apt install supervisor
 supervisord --version
 ```
 - Configure Supervisor. Edit /etc/supervisor/supervisord.conf. Add the following:  
+- Attention! change TANGO_HOST to connect to another tango database, e.g. id13 ESRF:  
+```environment = TANGO_HOST="lid13ctrl1.esrf.fr:20000"``` or remove ths line  
 ```
 [inet_http_server]
 port = 160.103.33.50:9001
@@ -140,6 +142,7 @@ password = tonic13
 [program:nanocontrol_tango]
 directory = /home/pi/nanocal_pi
 command = python nanocontrol_tango.py NanoControl
+environment = TANGO_HOST="lid13ctrl1.esrf.fr:20000"
 stdout_logfile = /home/pi/nanocal_pi/logs/supervisor_nanocontrol_tango.log
 stderr_logfile= /home/pi/nanocal_pi/logs/supervisor_nanocontrol_tango.err
 autostart = true
