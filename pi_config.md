@@ -135,13 +135,13 @@ supervisord --version
 ```environment = TANGO_HOST="lid13ctrl1.esrf.fr:20000"``` or remove ths line  
 ```
 [inet_http_server]
-port = 160.103.33.50:9001
+port = <ip>:9001
 username = pi
 password = tonic13
 
 [program:nanocontrol_tango]
 directory = /home/pi/nanocal_pi
-command = python nanocontrol_tango.py NanoControl
+command = python back/nanocontrol_tango.py NanoControl
 environment = TANGO_HOST="lid13ctrl1.esrf.fr:20000"
 stdout_logfile = /home/pi/nanocal_pi/logs/supervisor_nanocontrol_tango.log
 stderr_logfile= /home/pi/nanocal_pi/logs/supervisor_nanocontrol_tango.err
